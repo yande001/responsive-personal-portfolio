@@ -135,7 +135,7 @@ html{
 }
 
 body{
-    margin: 0 0 var(--header-height);
+    margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -175,6 +175,7 @@ img{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    color: var(--text-color);
 }
 
 .section__title,
@@ -234,6 +235,7 @@ img{
     right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    margin-right: var(--mb-0-25);
 }
 
 /* ====================== NAV STYLING ===================== */
@@ -341,7 +343,7 @@ img{
 .home{
     height: 70vh;
     align-content: space-between;
-    margin-top: var(--mb-3);
+    margin-top: 1rem;
     padding-bottom: 0;
     margin-bottom: var(--mb-2);
 }
@@ -463,6 +465,7 @@ img{
     justify-content: center;
     margin-top: var(--mb-1);
     animation: scrollDown 3s infinite;
+    margin-top: var(--mb-3);
 }
 
 .home__scroll-button{
@@ -489,4 +492,54 @@ img{
 .home__scroll-arrow{
     font-size: var(--h3-font-size);
 
+}
+
+/* =================== ABOUT ====================== */
+
+.about{
+    padding-top: 1rem;
+    margin-top: 7rem;
+}
+
+.about__img{
+    width: 250px;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+    display: inline-flex;
+    justify-self: center;
+}
+
+.about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+    color: var(--text-color);
+}
+
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5)
+}
+
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    
+}
+
+.about__info-name{
+    font-size: var(--smaller-font-size);
+    font-family: var(--roboto-font);
+}
+
+.about__info-name,
+.about__info-titlt{
+    display: block;
+    text-align: center;
+}
+
+.about__buttons{
+    display: flex;
+    justify-content: center;
 }

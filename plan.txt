@@ -7,3 +7,14 @@ Main
     PORTFOLIO
     CONTACT US
 FOOTER
+
+-------
+
+ABOUT DETAIL
+
+left -> image
+
+right -> text
+
+below image: -> Experience
+
