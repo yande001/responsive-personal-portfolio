@@ -69,6 +69,12 @@ font-family: 'Roboto Mono', monospace;
     --z-fixed: 100;
     --z-modal: 1000;
 
+     /*  ======== Background  ========= */
+     --background-body-color: hsl(var(--hue-color), 66%, 99%);
+     --border-color: none;
+     --border-style: none;
+     --footer-color: var(--first-color);
+
 }
 /* FONT SIZE FOR LARGER DEVICES */
 @media screen and(min-width: 968px){
@@ -100,6 +106,11 @@ body.dark-theme{
     --container-color: hsl(var(--hue-color), 30%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 10%, 50%);
     --scroll-thumb-color: hsl(var(--hue-color), 10%, 32%);
+
+    --background-body-color: rgba(255, 255, 255, 0.068);
+    --border-color: rgba(255, 255, 255, 0.425);
+    --border-style: solid;
+    --footer-color: hsl(250, 53%, 18%);
 }
 
 /* ==============NAV BUTTONS DARK/LIGHT THEME================*/
@@ -1184,3 +1195,117 @@ img{
   .form_button{
     border: none;
   }
+
+
+/* ===================== FOOTER  ======================= */
+
+.footer{
+    padding: 0;
+  }
+  
+  .footer__container{
+    row-gap: 3.5rem;
+  }
+  
+  .footer__bg{
+    background-color: var(--footer-color);
+    padding: 2rem 0 3rem;
+  }
+  
+  .footer__title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+  }
+  
+  .footer__subtitle{
+    font-size: var(--small-font-size);
+  }
+  
+  .footer__links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  
+  .footer__link:hover{
+    color: var(--first-color-lighter);
+  }
+  
+  
+  .footer__socials{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: var(--mb-1-5);
+    column-gap: var(--mb-1);
+  }
+  .footer__social{
+    margin: var(--mb-0-5);
+  }
+  
+  .footer__social:hover{
+    color: var(--first-color-lighter);
+  }
+  
+  .footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color);
+    margin-top: var(--mb-3);
+  }
+  
+  
+  .footer__title,
+  .footer__subtitle,
+  .footer__link,
+  .footer__social{
+    color: #FFF;
+  }
+
+    /* ===================== SCROLL UP ================== */
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: 0.8;
+    padding: 0 0.3rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+  }
+  
+  .scrollup:hover{
+    background-color: var(--first-color-alt);
+  }
+  
+  .scrollup__icon{
+    font-size: 1.5rem;
+    color: #FFF;
+  }
+  
+  /* SHOW SCROLL */
+  .show-scroll{
+    bottom: 5rem;
+  }
+
+  /* =============== Scroll Bar =================== */
+  
+  ::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--text-color-light);
+  }
+
+
