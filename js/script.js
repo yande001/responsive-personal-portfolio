@@ -77,7 +77,7 @@ new Typewriter('#typewriter', {
 
 
 var swiper = new Swiper(".blog-slider", {
-    cssMode: true,
+    // cssMode: true;
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
@@ -95,7 +95,7 @@ var swiper = new Swiper(".blog-slider", {
     // mousewheel: true,
     keyboard: true,
   });
-console.log("Portfo lio Swiper is working!")
+console.log("Portfolio Swiper is working!")
 
 //===================================== SCROLL UP =========================
 function scrollUp(){
@@ -110,7 +110,6 @@ function scrollUp(){
     console.log("Scroll up being called and working!")
 }
 window.addEventListener('scroll', scrollUp)
-
 
 //===================================== SCROLL SECTION ACTIVE HIGHLIGHT =========================
 
@@ -135,3 +134,4 @@ function scrollActive() {
     console.log("Section highlight working!")
 }
 window.addEventListener('scroll', scrollActive)
+
