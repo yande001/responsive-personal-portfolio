@@ -2,7 +2,7 @@ Header
 Main
     HOME
     ABOUT
-    QULIFICATION
+    EDUCATION
     SKILLS
     PORTFOLIO
     CONTACT US
