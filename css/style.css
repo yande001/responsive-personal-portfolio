@@ -13,7 +13,7 @@ font-family: 'Roboto Mono', monospace;
 
 
     /* DECIDE YOUR BROWSER THEME */
-    --hue-color: 250;  /* GREEN: 144, BLUE: 230, PURPLE: 250, PINK: 340  */
+    --hue-color: 230;  /* GREEN: 144, BLUE: 230, PURPLE: 250, PINK: 340  */
 
     /* HSL Color mode */
     --first-color: hsl(var(--hue-color), 69%, 58%);
@@ -174,7 +174,7 @@ img{
 /* ================ REUSABLE CSS CLASSES ================ */
 .section{
     padding: 2rem 0 4rem;
-    margin: auto;
+    margin: 2rem;
     min-height: 80vh;
 }
 
@@ -904,7 +904,7 @@ img{
   .blog-slider__img {
 	width: 300px;
 	flex-shrink: 0;
-	height: 300px;
+	height: 570px;
 	background-image: var(--gradient-first);
 	box-shadow: 4px 13px 30px 1px rgba(57, 158, 218, 0.2);
 	border-radius: 20px;
